@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning HTMX</title>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <link href="/assets/bundle.css" rel="stylesheet" />
+   
+  </head>
+  <body  class="text-center py-20 flex flex-col gap-y-20">
+    <div class="text-3xl font-semibold">HTMX!</div>
+    <div>
+      <button
+        class="bg-gray-300 px-4 rounded-sm hover:opacity-80 transition"
+        hx-get="/api/hello-world"
+        hx-swap="outerHTML"
+      >
+        Say Hi!
+      </button>
+    </div>
+    <div id="root">
+      You need JS for this part.
+    </div>
+    <script src="/assets/bundle.js"></script>
+  </body>
+</html>
